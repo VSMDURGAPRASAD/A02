@@ -12,7 +12,7 @@ function calculate_gpa(){
  sem1_subject1 = document.getElementById("Subject_1").value;
  sem1_subject2 = document.getElementById("Subject_2").value;
  sem1_subject3 = document.getElementById("Subject_3").value;
-if()
+
 if( sem1_subject1 == "A" || sem1_subject1 == "a") {
      z= 4.0;
      
@@ -22,11 +22,11 @@ if( sem1_subject1 == "A" || sem1_subject1 == "a") {
 } else if(sem1_subject1 =="C" || sem1_subject1 =="c"){
      z=2.0;
     
-} else if (sem1_subject1 =="D" || sem1_subject1 =="d" || sem1_subject1 =="F" || sem1_subject1 =="f") {
+} else if (sem1_subject1 =="F" || sem1_subject1 =="f") {
      z= 0.0;
    
 }else {
-    z = "Please Enter a grades"+ "A"+" "+"B"+" "+"C"+" "+"D"+" "+"F" +"to know your Final Gpa" ;
+    alert(z = "Please Enter a grade from "+ "A"+" "+"B"+" "+"C"+" "+" "+"F" +" to know your Semester 1 Gpa") ;
 }
  if( sem1_subject2 == "A" ||  sem1_subject2 == "a") {
      y=4.0;
@@ -37,26 +37,26 @@ if( sem1_subject1 == "A" || sem1_subject1 == "a") {
 }else if(sem1_subject2 =="C"|| sem1_subject2=="c"){
      y=2.0;
     
-}else if(sem1_subject2 =="D"|| sem1_subject2=="d"||sem1_subject2 =="E"|| sem1_subject2=="e"||sem1_subject2=="F"|| sem1_subject1=="f"){
+}else if(sem1_subject2=="F"|| sem1_subject1=="f"){
      y=0.0;
 
     
 }else{
-    y = "Please Enter a grades"+ "A"+" "+"B"+" "+"C"+" "+"D"+" "+"F" +"to know your Final Gpa" ;
+    alert(y = "Please Enter a grades "+ "A"+" "+"B"+" "+"C"+" "+"D"+" "+"F" +" to know your Semester 1 Gpa") ;
 }
 if( sem1_subject3 == "A" ||  sem1_subject3 == "a") {
     x= 4.0;
 
-}else if(sem1_subject3 =="B"|| sem1_subject3=="d"){
+}else if(sem1_subject3 =="B"|| sem1_subject3=="b"){
     x= 3.0;
 
 }else if(sem1_subject3 =="C"|| sem1_subject3=="c"){
     x= 2.0;
     
-}else if(sem1_subject3 =="D"|| sem1_subject3=="d"||sem1_subject3 =="E"|| sem1_subject3=="e"||sem1_subject3 =="F"|| sem1_subject1=="f"){
+}else if(sem1_subject3 =="F"|| sem1_subject1=="f"){
     x= 0.0; 
 }else{
-    x = "Please Enter a grades"+ "A"+" "+"B"+" "+"C"+" "+"D"+" "+"F" +"to know your Final Gpa" ;
+    alert(x = "Please Enter a grades "+ "A"+" "+"B"+" "+"C"+" "+"F" +" to know your Semester 1 Gpa" );
 }
 
 a=(x+y+z)/3;
