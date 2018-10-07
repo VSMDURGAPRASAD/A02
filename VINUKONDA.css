@@ -17,10 +17,7 @@ th {
 
 body {
     background-image: url("images.jpg");
-	background-size:fill;
-    background-repeat: no-repeat;
-    /* background-position: right top; */
-    margin-right: 200px;
+	background-size:fill;    
 }
 #h01 {
    background-color: yellow;
@@ -69,6 +66,9 @@ body {
 	  color:black;
   }
   
+  .re{
+	  color: black;
+  }
 .img-ci{
 	width: 150px;
 	height: 150px;
@@ -101,7 +101,7 @@ body {
   }
 
 .ve{
-	color: white;
+	color: rgb(7, 2, 2);
 }
 
 

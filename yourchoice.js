@@ -25,8 +25,6 @@ if( sem1_subject1 == "A" || sem1_subject1 == "a") {
 } else if (sem1_subject1 =="F" || sem1_subject1 =="f") {
      z= 0.0;
    
-}else {
-    alert(z = "Please Enter a grade from "+ "A"+" "+"B"+" "+"C"+" "+" "+"F" +" to know your Semester 1 Gpa") ;
 }
  if( sem1_subject2 == "A" ||  sem1_subject2 == "a") {
      y=4.0;
@@ -41,8 +39,6 @@ if( sem1_subject1 == "A" || sem1_subject1 == "a") {
      y=0.0;
 
     
-}else{
-    alert(y = "Please Enter a grades "+ "A"+" "+"B"+" "+"C"+" "+"D"+" "+"F" +" to know your Semester 1 Gpa") ;
 }
 if( sem1_subject3 == "A" ||  sem1_subject3 == "a") {
     x= 4.0;
@@ -55,12 +51,19 @@ if( sem1_subject3 == "A" ||  sem1_subject3 == "a") {
     
 }else if(sem1_subject3 =="F"|| sem1_subject1=="f"){
     x= 0.0; 
-}else{
-    alert(x = "Please Enter a grades "+ "A"+" "+"B"+" "+"C"+" "+"F" +" to know your Semester 1 Gpa" );
 }
-
+    
+if((sem1_subject1 == "A" || sem1_subject1 == "a" || sem1_subject1 == "B" || sem1_subject1 =="b" || sem1_subject1 =="C" || sem1_subject1 =="c" || sem1_subject1 =="F" || sem1_subject1 =="f") && 
+(sem1_subject2 == "A" || sem1_subject2 == "a" || sem1_subject2 == "B" || sem1_subject2 =="b" || sem1_subject2 =="C" || sem1_subject2 =="c" || sem1_subject2 =="F" || sem1_subject2 =="f") &&
+(sem1_subject3 == "A" || sem1_subject3 == "a" || sem1_subject3 == "B" || sem1_subject3 =="b" || sem1_subject3 =="C" || sem1_subject3 =="c" || sem1_subject3 =="F" || sem1_subject3 =="f")){
 a=(x+y+z)/3;
 
 document.getElementById("dem").innerHTML=a;
+}else{
+    alert(x = "Please Enter a grades "+ "A"+" "+"B"+" "+"C"+" "+"F" +" to know your Semester 1 Gpa" );
+    document.getElementById("Subject_1").value = null;
+    document.getElementById("Subject_2").value = null;
+    document.getElementById("Subject_3").value = null;
+}
 
 }
