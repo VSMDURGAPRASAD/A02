@@ -25,7 +25,7 @@
     color:white;
 }
 body{
-    background-image: url("contact.jpg");
+    background-image: url("Contact.jpg");
     background-size:fill;
 }
 input[type=text], select, textarea {
